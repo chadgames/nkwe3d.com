@@ -75,3 +75,29 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .dot { animation: none; }
 }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 28px;
+  margin-top: 28px;
+}
+
+.links a {
+  color: var(--copper);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  padding: 6px 2px;
+  border-bottom: 1px solid var(--copper-dim);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.links a:hover,
+.links a:focus-visible {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  outline: none;
+}
